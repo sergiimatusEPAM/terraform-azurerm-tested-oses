@@ -1,6 +1,25 @@
-##
-# outputs for `resource`
-##
-output "arg1" {
-  value = "${resource.name.arg1}"
+# Output
+output "user" {
+ value = "${data.template_file.traditional_os_user.rendered}"
+}
+
+output "azure_offer" {
+  value = "${data.template_file.azure_offer.rendered}"
+}
+
+output "azure_publisher" {
+  value = "${data.template_file.azure_publisher.rendered}"
+}
+
+output "azure_sku" {
+  value = "${data.template_file.azure_sku.rendered}"
+}
+
+output "azure_version" {
+  value = "${data.template_file.azure_version.rendered}"
+}
+
+# Main Output
+output "os-setup" {
+   value = "${data.template_file.os-setup.rendered}"
 }
