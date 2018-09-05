@@ -43,5 +43,5 @@ data "template_file" "azure_version" {
 
 # Cloud Image Instruction
 data "template_file" "os-setup" {
-template = "${file("${path.module}/platform/cloud/${var.provider}/${var.os}/setup.sh")}"
+  template = "${file("${path.module}/platform/cloud/${var.provider}/${var.os}/setup.sh")}"
 }
