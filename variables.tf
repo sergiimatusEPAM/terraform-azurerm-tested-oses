@@ -1,5 +1,6 @@
 # Standard Default OS Users
 variable "traditional_default_os_user" {
+  description = "traditional default os user"
   type = "map"
 
   default = {
@@ -12,6 +13,7 @@ variable "traditional_default_os_user" {
 
 # Azure Images
 variable "azure_os_image_version" {
+  description = "azure os image version"
   type = "map"
 
   # Azure Cloud Image Schema # Offer  / Publisher / SKU  / Version
@@ -26,12 +28,18 @@ variable "azure_os_image_version" {
 }
 
 variable "provider" {
+  description = "provider"
   default = "azure"
 }
 
-variable "os" {}
-variable "region" {}
+variable "os" {
+  description = "Operating system to use"
+}
+variable "region" {
+  description = "region"
+}
 
 variable "dcos_version" {
+  description = "Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list."
   default = "1.7"
 }
