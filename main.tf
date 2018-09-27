@@ -1,3 +1,7 @@
+/**
+ * [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-template-azurerm-tested-oses/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-template-azurerm-tested-oses/job/master/)
+ */
+
 ## Azure Data Templates
 #
 
