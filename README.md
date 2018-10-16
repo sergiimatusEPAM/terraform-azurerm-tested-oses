@@ -1,9 +1,7 @@
 [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-template-azurerm-tested-oses/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-template-azurerm-tested-oses/job/master/)
 
-
 # Azure Tested OSes
 This module returns for an given OS the Azure Image as well as its default user and the prerequisits script
-
 
 ## EXAMPLE
 
@@ -16,6 +14,7 @@ module "dcos-tested-oses" {
   region = "West US"
 }
 ```
+
 
 ## Inputs
 
