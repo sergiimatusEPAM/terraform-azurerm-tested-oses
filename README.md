@@ -31,10 +31,10 @@ module "dcos-tested-oses" {
 
 | Name | Description |
 |------|-------------|
-| azure_offer | azure offer |
-| azure_publisher | azure publisher |
-| azure_sku | azure sku |
-| azure_version | azure version |
+| azure_offer | Azure Offer |
+| azure_publisher | Azure Publisher |
+| azure_sku | Azure SKU |
+| azure_version | Azure Version |
 | os-setup | os-setup |
 | user | User |
 
