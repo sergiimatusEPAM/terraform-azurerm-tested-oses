@@ -1,6 +1,5 @@
-# Output
 output "user" {
-  description = "user"
+  description = "User"
   value       = "${data.template_file.traditional_os_user.rendered}"
 }
 
@@ -24,7 +23,6 @@ output "azure_version" {
   value       = "${data.template_file.azure_version.rendered}"
 }
 
-# Main Output
 output "os-setup" {
   description = "os-setup"
   value       = "${data.template_file.os-setup.rendered}"

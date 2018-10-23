@@ -20,12 +20,12 @@ module "dcos-tested-oses" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| azure_os_image_version | azure os image version | map | `<map>` | no |
+| azure_os_image_version | Azure Images | map | `<map>` | no |
 | dcos_version | Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list. | string | `1.7` | no |
 | os | Operating system to use | string | - | yes |
-| provider | provider | string | `azure` | no |
+| provider | Provider to use | string | `azure` | no |
 | region | region | string | - | yes |
-| traditional_default_os_user | traditional default os user | map | `<map>` | no |
+| traditional_default_os_user | Standard Default OS Users | map | `<map>` | no |
 
 ## Outputs
 
@@ -35,6 +35,6 @@ module "dcos-tested-oses" {
 | azure_publisher | azure publisher |
 | azure_sku | azure sku |
 | azure_version | azure version |
-| os-setup | Main Output |
-| user | Output |
+| os-setup | os-setup |
+| user | User |
 
