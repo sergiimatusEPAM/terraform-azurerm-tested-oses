@@ -4,22 +4,22 @@ output "user" {
 }
 
 output "azure_offer" {
-  description = "azure offer"
+  description = "Azure Offer"
   value       = "${data.template_file.azure_offer.rendered}"
 }
 
 output "azure_publisher" {
-  description = "azure publisher"
+  description = "Azure Publisher"
   value       = "${data.template_file.azure_publisher.rendered}"
 }
 
 output "azure_sku" {
-  description = "azure sku"
+  description = "Azure SKU"
   value       = "${data.template_file.azure_sku.rendered}"
 }
 
 output "azure_version" {
-  description = "azure version"
+  description = "Azure Version"
   value       = "${data.template_file.azure_version.rendered}"
 }
 
