@@ -1,6 +1,5 @@
-# Standard Default OS Users
 variable "traditional_default_os_user" {
-  description = "traditional default os user"
+  description = "Standard Default OS Users"
   type        = "map"
 
   default = {
@@ -11,13 +10,10 @@ variable "traditional_default_os_user" {
   }
 }
 
-# Azure Images
 variable "azure_os_image_version" {
-  description = "azure os image version"
+  description = "Azure Images"
   type        = "map"
 
-  # Azure Cloud Image Schema # Offer  / Publisher / SKU  / Version
-  #                              V          V        V         V
   default = {
     "centos_7.2"      = ["CentOS", "OpenLogic", "7.2", "7.2.20170517"]
     "centos_7.3"      = ["CentOS", "OpenLogic", "7.3", "7.3.20170707"]
@@ -28,7 +24,7 @@ variable "azure_os_image_version" {
 }
 
 variable "provider" {
-  description = "provider"
+  description = "Provider to use"
   default     = "azure"
 }
 
