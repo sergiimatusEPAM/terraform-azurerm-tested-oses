@@ -23,17 +23,9 @@ variable "azure_os_image_version" {
   }
 }
 
-variable "provider" {
-  description = "Provider to use"
-  default     = "azure"
-}
-
 variable "os" {
   description = "Operating system to use"
-}
-
-variable "region" {
-  description = "region"
+  default     = "centos_7.3"
 }
 
 variable "dcos_version" {
