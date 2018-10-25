@@ -1,29 +1,31 @@
+# Output
 output "user" {
-  description = "User"
-  value       = "${data.template_file.traditional_os_user.rendered}"
+  description = "user"
+  value       = "${local.user}"
 }
 
 output "azure_offer" {
-  description = "Azure Offer"
-  value       = "${data.template_file.azure_offer.rendered}"
+  description = "azure offer"
+  value       = "${local.azure_offer}"
 }
 
 output "azure_publisher" {
-  description = "Azure Publisher"
-  value       = "${data.template_file.azure_publisher.rendered}"
+  description = "azure publisher"
+  value       = "${local.azure_publisher}"
 }
 
 output "azure_sku" {
-  description = "Azure SKU"
-  value       = "${data.template_file.azure_sku.rendered}"
+  description = "azure sku"
+  value       = "${local.azure_sku}"
 }
 
 output "azure_version" {
-  description = "Azure Version"
-  value       = "${data.template_file.azure_version.rendered}"
+  description = "azure version"
+  value       = "${local.azure_version}"
 }
 
+# Main Output
 output "os-setup" {
   description = "os-setup"
-  value       = "${data.template_file.os-setup.rendered}"
+  value       = "${local.script}"
 }
