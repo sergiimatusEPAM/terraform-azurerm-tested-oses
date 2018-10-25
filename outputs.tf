@@ -1,26 +1,26 @@
 # Output
 output "user" {
-  description = "user"
+  description = "User"
   value       = "${local.user}"
 }
 
 output "azure_offer" {
-  description = "azure offer"
+  description = "Azure Offer"
   value       = "${local.azure_offer}"
 }
 
 output "azure_publisher" {
-  description = "azure publisher"
+  description = "Azure Publisher"
   value       = "${local.azure_publisher}"
 }
 
 output "azure_sku" {
-  description = "azure sku"
+  description = "Azure SKU"
   value       = "${local.azure_sku}"
 }
 
 output "azure_version" {
-  description = "azure version"
+  description = "Azure Version"
   value       = "${local.azure_version}"
 }
 
