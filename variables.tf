@@ -17,6 +17,7 @@ variable "azure_os_image_version" {
   default = {
     "centos_7.2"      = ["CentOS", "OpenLogic", "7.2", "7.2.20170517"]
     "centos_7.3"      = ["CentOS", "OpenLogic", "7.3", "7.3.20170707"]
+    "centos_7.5"      = ["CentOS", "OpenLogic", "7.5", "7.5.20180815"]
     "coreos_835.13.0" = ["CoreOS", "CoreOS", "Stable", "835.13.0"]
     "coreos_1235.9.0" = ["CoreOS", "CoreOS", "Stable", "1235.9.0"]
     "coreos_1855.5.0" = ["CoreOS", "CoreOS", "Stable", "1855.5.0"]
