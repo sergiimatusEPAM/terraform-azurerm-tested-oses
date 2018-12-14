@@ -9,7 +9,7 @@
  * ```hcl
  * module "dcos-tested-oses" {
  *   source  = "terraform-dcos/tested-oses/azurerm"
- *   version = "~> 0.1"
+ *   version = "~> 0.1.0"
  *
  *   os = "centos_7.3"
  * }
