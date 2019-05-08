@@ -14,24 +14,23 @@ module "dcos-tested-oses" {
 }
 ```
 
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| azure_os_image_version | Azure Images | map | `<map>` | no |
-| dcos_version | Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list. | string | `1.7` | no |
-| os | Operating system to use | string | `centos_7.3` | no |
-| traditional_default_os_user | Standard Default OS Users | map | `<map>` | no |
+| azure\_os\_image\_version | Azure Images | map | `<map>` | no |
+| dcos\_version | Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list. | string | `"1.7"` | no |
+| os | Operating system to use | string | `"centos_7.3"` | no |
+| traditional\_default\_os\_user | Standard Default OS Users | map | `<map>` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| azure_offer | Azure Offer |
-| azure_publisher | Azure Publisher |
-| azure_sku | Azure SKU |
-| azure_version | Azure Version |
-| os-setup | Main Output |
-| user | Output |
+| azure\_offer | Azure Offer |
+| azure\_publisher | Azure Publisher |
+| azure\_sku | Azure SKU |
+| azure\_version | Azure Version |
+| os-setup | os-setup |
+| user | User |
 
