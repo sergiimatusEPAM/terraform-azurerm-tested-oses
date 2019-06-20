@@ -33,3 +33,8 @@ variable "os" {
   description = "Operating system to use"
   default     = "centos_7.6"
 }
+
+variable "dcos_version" {
+  description = "Specifies which DC/OS version instruction to use. Options: 1.13.1, 1.12.3, 1.11.10, etc. See dcos_download_path or dcos_version tree for a full list."
+  default     = "1.13.1"
+}
