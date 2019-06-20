@@ -21,7 +21,7 @@ locals {
   os_version = "${element(split("_", var.os),1)}"
 
   os_special_version_script = {
-    centos = ["7.3"]
+    centos = ["7.3", "7.5", "7.6"]
     coreos = []
     rhel   = []
   }
