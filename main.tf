@@ -13,7 +13,7 @@
  *   source  = "terraform-dcos/tested-oses/azurerm"
  *   version = "~> 0.2.0"
  *
- *   os = "centos_7.3"
+ *   os = "centos_7.6"
  * }
  * ```
  */
@@ -21,12 +21,6 @@
 locals {
   os_name    = "${element(split("_", var.os),0)}"
   os_version = "${element(split("_", var.os),1)}"
-
-  os_special_version_script = {
-    centos = ["7.3"]
-    coreos = []
-    rhel   = []
-  }
 
   user            = "${lookup(var.traditional_default_os_user, local.os_name)}"
   azure_offer     = "${element(var.azure_os_image_version[var.os], 0)}"
