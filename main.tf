@@ -1,10 +1,12 @@
 /**
- * [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-tested-oses/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-tested-oses/job/master/)
+ * [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/buildStatus/icon?job=dcos-terraform%2Fterraform-azurerm-tested-oses%2Fsupport%252F0.2.x)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-tested-oses/job/support%252F0.2.x/)
  *
- * # Azure Tested OSes
+ * Azure DC/OS Tested OSes
+ * ==========
  * This module returns for an given OS the Azure Image as well as its default user
  *
- * ## EXAMPLE
+ * EXAMPLE
+ * -------
  *
  * ```hcl
  * module "dcos-tested-oses" {
