@@ -1,4 +1,3 @@
-# Output
 output "user" {
   description = "User"
   value       = "${local.user}"
@@ -22,10 +21,4 @@ output "azure_sku" {
 output "azure_version" {
   description = "Azure Version"
   value       = "${local.azure_version}"
-}
-
-# Main Output
-output "os-setup" {
-  description = "os-setup"
-  value       = "${local.script}"
 }
